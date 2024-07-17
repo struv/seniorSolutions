@@ -33,11 +33,7 @@ function Information() {
             <Grid container justifyContent="flex-start">
               <Grid item xs={12} md={6}>
                 <MKBox mb={5}>
-                  <DefaultInfoCard
-                    icon="public"
-                    title="Fully integrated"
-                    description="We get insulted by others, lose trust for those We get back freezes"
-                  />
+                  <DefaultInfoCard icon="public" title="Fully integrated" description="hi" />
                 </MKBox>
               </Grid>
               <Grid item xs={12} md={6}>
@@ -45,7 +41,9 @@ function Information() {
                   <DefaultInfoCard
                     icon="payments"
                     title="Payments functionality"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    description="Care Management is a service offered to help families through changes and transitions a Senior may be experiencing; be it aging in place, returning home after a hospital stay, or simply needing some help and guidance to make a plan and put some systems in place. 
+
+"
                   />
                 </MKBox>
               </Grid>
@@ -63,7 +61,9 @@ function Information() {
                   <DefaultInfoCard
                     icon="3p"
                     title="Improved platform"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    description="When Seniors can no longer stay safely at home, we help them find a new place to live, such as an Assisted Living, Independent Living, or a Board and Care/RCFE. This placement service is free for the family/client.
+
+"
                   />
                 </MKBox>
               </Grid>

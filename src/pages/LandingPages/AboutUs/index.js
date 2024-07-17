@@ -21,40 +21,31 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+//import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
+import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // About Us page sections
 import Information from "pages/LandingPages/AboutUs/sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
 import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
-
+import Header from "pages/LandingPages/AboutUs/sections/header1.js";
+import Features from "pages/LandingPages/AboutUs/sections/Features";
+import Posts from "pages/LandingPages/AboutUs/sections/Posts";
 // Routes
-import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+/* import bgImage from "assets/images/seniors/dance.jpg"; */
 
 function AboutUs() {
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "default",
-        }}
-        transparent
-        light
-      />
-      <MKBox
+      <Header />
+      {/* <MKBox
         minHeight="75vh"
         width="100%"
         sx={{
@@ -89,14 +80,19 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              Welcome to JS Senior Solutions
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+              Providing quality concierge services to Seniors and their families with the
+              professional guidance, support, and care they deserve. We look forward to helping you.
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
+            <MKButton
+              component="a"
+              color="default"
+              href="mailto:jsseniorsolutions@gmail.com?subject=JS Senior Solutions Inquiry"
+              sx={{ color: ({ palette: { dark } }) => dark.main }}
+            >
+              email us
             </MKButton>
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
@@ -117,7 +113,7 @@ function AboutUs() {
             </MKBox>
           </Grid>
         </Container>
-      </MKBox>
+      </MKBox> */}
       <Card
         sx={{
           p: 2,
@@ -127,7 +123,63 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
+        <Features />
+        <MKBox component="section" py={8}>
+          <Grid container alignItems="center" py={2}>
+            <Grid item xs={12} sm={9}>
+              <MKTypography variant="h1" textAlign="Center">
+                H1 Material Kit
+              </MKTypography>
+            </Grid>
+          </Grid>
+        </MKBox>
+
         <Information />
+        <Container>
+          <Grid container spacing={3}>
+            <Grid item xs={12} lg={4}>
+              <FilledInfoCard
+                variant="gradient"
+                color="info"
+                icon="flag"
+                title="Getting Started"
+                description="Check the possible ways of working with our product and the necessary files for building your own project."
+                action={{
+                  type: "external",
+                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                  label: "Let's start",
+                }}
+              />
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <FilledInfoCard
+                color="info"
+                icon="precision_manufacturing"
+                title="Plugins"
+                description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
+                action={{
+                  type: "external",
+                  route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
+                  label: "Read more",
+                }}
+              />
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <FilledInfoCard
+                color="info"
+                icon="apps"
+                title="Components"
+                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
+                action={{
+                  type: "external",
+                  route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+                  label: "Read more",
+                }}
+              />
+            </Grid>
+          </Grid>
+        </Container>
+        <Posts />
         <Team />
         <Featuring />
         <Newsletter />
