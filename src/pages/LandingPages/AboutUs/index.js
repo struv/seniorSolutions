@@ -28,7 +28,7 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
+//import Information from "pages/LandingPages/AboutUs/sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
 import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
@@ -124,17 +124,16 @@ function AboutUs() {
         }}
       >
         <Features />
-        <MKBox component="section" py={8}>
-          <Grid container alignItems="center" py={2}>
-            <Grid item xs={12} sm={9}>
-              <MKTypography variant="h1" textAlign="Center">
-                H1 Material Kit
+        <MKBox component="section" py={2}>
+          <Grid container alignItems="center" py={0}>
+            <Grid item xs={12} sm={90}>
+              <MKTypography variant="h2" textAlign="Center">
+                Services
               </MKTypography>
             </Grid>
           </Grid>
         </MKBox>
 
-        <Information />
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
@@ -142,7 +141,7 @@ function AboutUs() {
                 variant="gradient"
                 color="info"
                 icon="flag"
-                title="Getting Started"
+                title="Assesment Services"
                 description="Check the possible ways of working with our product and the necessary files for building your own project."
                 action={{
                   type: "external",
@@ -155,7 +154,7 @@ function AboutUs() {
               <FilledInfoCard
                 color="info"
                 icon="precision_manufacturing"
-                title="Plugins"
+                title="Care Management"
                 description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
                 action={{
                   type: "external",
@@ -168,7 +167,7 @@ function AboutUs() {
               <FilledInfoCard
                 color="info"
                 icon="apps"
-                title="Components"
+                title="Placement Services"
                 description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
                 action={{
                   type: "external",
