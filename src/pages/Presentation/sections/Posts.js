@@ -61,7 +61,7 @@ function Places() {
               description="Making the right senior living choice can feel overwhelming. Our blog post dives into independent living ..."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "#",
                 color: "info",
                 label: "read more",
               }}
@@ -74,7 +74,7 @@ function Places() {
               description="Senior care should go beyond just meeting basic needs. This blog post explores the importance of treating seniors ..."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "#",
                 color: "info",
                 label: "read more",
               }}
@@ -87,7 +87,7 @@ function Places() {
               description="Read about other's firsthand experiences, available resources, and educate yourself on the world of senior care."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "#",
                 label: "read more",
               }}
             />
