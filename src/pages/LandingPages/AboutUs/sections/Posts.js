@@ -44,8 +44,8 @@ function Places() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post1}
-              title="Rover raised $65 million"
-              description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
+              title="Senior Transitions Made Easy"
+              description="Feeling lost as your loved one ages? This guide explores common transitions like aging in place ..."
               action={{
                 type: "internal",
                 route: "/pages/blogs/author",
@@ -57,8 +57,8 @@ function Places() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post2}
-              title="MateLabs machine learning"
-              description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
+              title="Free Senior Living Help"
+              description="Making the right senior living choice can feel overwhelming. Our blog post dives into independent living ..."
               action={{
                 type: "internal",
                 route: "/pages/blogs/author",
@@ -70,8 +70,8 @@ function Places() {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post3}
-              title="MateLabs machine learning"
-              description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
+              title="Respectful Senior Care"
+              description="Senior care should go beyond just meeting basic needs. This blog post explores the importance of treating seniors ..."
               action={{
                 type: "internal",
                 route: "/pages/blogs/author",
@@ -83,8 +83,8 @@ function Places() {
           <Grid item xs={12} sm={6} lg={3}>
             <BackgroundBlogCard
               image={post4}
-              title="Flexible work hours"
-              description="Rather than worrying about switching offices every couple years, you stay in the same place."
+              title="JS Senior Solutions Blog"
+              description="Read about other's firsthand experiences, available resources, and educate yourself on the world of senior care."
               action={{
                 type: "internal",
                 route: "/pages/blogs/author",

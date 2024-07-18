@@ -22,37 +22,48 @@ import MKBox from "components/MKBox";
 
 // Material Kit 2 React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
-import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
+//import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
 
 function Information() {
   return (
     <MKBox component="section" py={12}>
       <Container>
-        <Grid container spacing={3} alignItems="center">
-          <Grid item xs={12} lg={6}>
+        <Grid container spacing={4} alignItems="center">
+          <Grid item xs={12} lg={16}>
             <Grid container justifyContent="flex-start">
               <Grid item xs={12} md={6}>
                 <MKBox mb={5}>
-                  <DefaultInfoCard icon="public" title="Fully integrated" description="hi" />
+                  <DefaultInfoCard
+                    icon="public"
+                    title="Independent Living"
+                    description="Ideal for seniors who value their independence but appreciate the security and convenience of a senior living community. Offers private apartments, housekeeping, meals, and social activities."
+                  />
                 </MKBox>
               </Grid>
               <Grid item xs={12} md={6}>
                 <MKBox mb={5}>
                   <DefaultInfoCard
                     icon="payments"
-                    title="Payments functionality"
-                    description="Care Management is a service offered to help families through changes and transitions a Senior may be experiencing; be it aging in place, returning home after a hospital stay, or simply needing some help and guidance to make a plan and put some systems in place. 
-
-"
+                    title="Assisted Living"
+                    description="Provides personalized support with daily tasks like bathing, dressing, medication management, and meals. Encourages independence while offering assistance for those who need it, fostering a social and engaging environment."
                   />
                 </MKBox>
               </Grid>
               <Grid item xs={12} md={6}>
-                <MKBox mb={{ xs: 5, md: 0 }}>
+                <MKBox mb={5}>
                   <DefaultInfoCard
-                    icon="apps"
-                    title="Prebuilt components"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    icon="warning"
+                    title="Memory Care"
+                    description="Specialized care in a secure setting designed to meet the unique needs of those with memory impairments. Offers structured routines, cognitive stimulation activities, and compassionate care that promotes safety and well-being."
+                  />
+                </MKBox>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <MKBox mb={5}>
+                  <DefaultInfoCard
+                    icon="home"
+                    title="Residential Care Home"
+                    description="Provides a home-like atmosphere with a smaller number of residents. Offers assistance with daily living activities like bathing, dressing, and medication reminders, creating a familiar and comfortable environment. (Similar to assisted living with a more intimate feel)"
                   />
                 </MKBox>
               </Grid>
@@ -60,27 +71,21 @@ function Information() {
                 <MKBox mb={{ xs: 5, md: 0 }}>
                   <DefaultInfoCard
                     icon="3p"
-                    title="Improved platform"
-                    description="When Seniors can no longer stay safely at home, we help them find a new place to live, such as an Assisted Living, Independent Living, or a Board and Care/RCFE. This placement service is free for the family/client.
-
-"
+                    title="Boarding Care Home"
+                    description="Basic care services in a shared living environment, often at a lower cost than assisted living. May offer meals, medication assistance, and supervision. (Regulations may vary by location)."
+                  />
+                </MKBox>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <MKBox mb={{ xs: 5, md: 0 }}>
+                  <DefaultInfoCard
+                    icon="alarm"
+                    title="In-Home Care"
+                    description="Non-medical care provided in the comfort of your own home. Caregivers can assist with daily tasks like bathing, dressing, meal preparation, medication reminders, and light housekeeping. They can also provide companionship and social interaction."
                   />
                 </MKBox>
               </Grid>
             </Grid>
-          </Grid>
-          <Grid item xs={12} lg={4} sx={{ ml: "auto", mt: { xs: 3, lg: 0 } }}>
-            <CenteredBlogCard
-              image="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-              title="Get insights on Search"
-              description="Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards."
-              action={{
-                type: "internal",
-                route: "pages/company/about-us",
-                color: "info",
-                label: "find out more",
-              }}
-            />
           </Grid>
         </Grid>
       </Container>

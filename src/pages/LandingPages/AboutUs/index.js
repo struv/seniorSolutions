@@ -24,19 +24,23 @@ import MKTypography from "components/MKTypography";
 //import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
-import DefaultFooter from "examples/Footers/DefaultFooter";
+//import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // About Us page sections
-//import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
+import Intro from "pages/LandingPages/AboutUs/sections/Intro";
+import Information from "pages/LandingPages/AboutUs/sections/Information";
+import Information2 from "pages/LandingPages/AboutUs/sections/Information2";
+//import Team from "pages/LandingPages/AboutUs/sections/Team";
+//import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
+//import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 import Header from "pages/LandingPages/AboutUs/sections/header1.js";
-import Features from "pages/LandingPages/AboutUs/sections/Features";
+//import Features from "pages/LandingPages/AboutUs/sections/Features";
 import Posts from "pages/LandingPages/AboutUs/sections/Posts";
+import Contact from "pages/LandingPages/AboutUs/sections/Contact";
+import Footer from "pages/LandingPages/AboutUs/sections/Footer";
 // Routes
-import footerRoutes from "footer.routes";
+//import footerRoutes from "footer.routes";
 
 // Images
 /* import bgImage from "assets/images/seniors/dance.jpg"; */
@@ -123,8 +127,8 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Features />
-        <MKBox component="section" py={2}>
+        {/* <Features /> */}
+        <MKBox component="section" py={4}>
           <Grid container alignItems="center" py={0}>
             <Grid item xs={12} sm={90}>
               <MKTypography variant="h2" textAlign="Center">
@@ -142,7 +146,7 @@ function AboutUs() {
                 color="info"
                 icon="flag"
                 title="Assesment Services"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
+                description="Our personalized assessments help identify your loved one's needs, preferences, and lifestyle goals to ensure a seamless transition to the ideal senior living environment."
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
@@ -155,7 +159,7 @@ function AboutUs() {
                 color="info"
                 icon="precision_manufacturing"
                 title="Care Management"
-                description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
+                description="Let us navigate the complexities of senior care. Our care managers provide ongoing support, advocate for your loved one's well-being, and ensure their needs are consistently met."
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
@@ -168,7 +172,7 @@ function AboutUs() {
                 color="info"
                 icon="apps"
                 title="Placement Services"
-                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
+                description="We take the stress out of finding the perfect senior living community. Our extensive network and expert knowledge allow us to match your loved one with the ideal setting that fosters independence and happiness."
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
@@ -178,14 +182,18 @@ function AboutUs() {
             </Grid>
           </Grid>
         </Container>
+        <Intro />
+        <Information />
+        <Information2 />
         <Posts />
-        <Team />
-        <Featuring />
-        <Newsletter />
+        {/* <Team />
+        <Featuring /> */}
+        <Contact />
+        <Footer />
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
+      {/* <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      </MKBox> */}
     </>
   );
 }
