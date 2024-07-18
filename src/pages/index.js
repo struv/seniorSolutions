@@ -28,17 +28,17 @@ import MKTypography from "components/MKTypography";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // About Us page sections
-import Intro from "pages/Presentation/sections/Intro";
-import Information from "pages/Presentation/sections/Information";
-import Information2 from "pages/Presentation/sections/Information2";
-//import Team from "pages/Presentation/sections/Team";
-//import Featuring from "pages/Presentation/sections/Featuring";
-//import Newsletter from "pages/Presentation/sections/Newsletter";
-import Header from "pages/Presentation/sections/header1.js";
-//import Features from "pages/Presentation/sections/Features";
-import Posts from "pages/Presentation/sections/Posts";
-import Contact from "pages/Presentation/sections/Contact";
-import Footer from "pages/Presentation/sections/Footer";
+import Intro from "pages/sections/Intro";
+import Information from "pages/sections/Information";
+import Information2 from "pages/sections/Information2";
+//import Team from "pages/sections/Team";
+//import Featuring from "pages/sections/Featuring";
+//import Newsletter from "pages/sections/Newsletter";
+import Header from "pages/sections/header1.js";
+//import Features from "pages/sections/Features";
+import Posts from "pages/sections/Posts";
+import Contact from "pages/sections/Contact";
+import Footer from "pages/sections/Footer";
 // Routes
 //import footerRoutes from "footer.routes";
 
@@ -162,7 +162,7 @@ function AboutUs() {
                 description="Let us navigate the complexities of senior care. Our care managers provide ongoing support, advocate for your loved one's well-being, and ensure their needs are consistently met."
                 action={{
                   type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
+                  route: "#",
                   label: "Read more",
                 }}
               />
@@ -175,7 +175,7 @@ function AboutUs() {
                 description="We take the stress out of finding the perfect senior living community. Our extensive network and expert knowledge allow us to match your loved one with the ideal setting that fosters independence and happiness."
                 action={{
                   type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+                  route: "#",
                   label: "Read more",
                 }}
               />
