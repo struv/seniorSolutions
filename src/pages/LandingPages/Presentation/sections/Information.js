@@ -42,21 +42,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Interested in
+                    Feel the
                     <br />
-                    Learning More
+                    Material Kit
                   </>
                 }
-                description="We are happy to assist with all of your senior related needs"
+                description="All the MUI components that you need in a development have been re-design with the new look."
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Lets Talk Care"
-                description="Send us a short message and we'll be happy to apply our knowledge and experience to your particular situation"
+                title="Discover More"
+                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "contact us",
+                  label: "start with header",
                 }}
               />
             </RotatingCard>
@@ -66,15 +66,16 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="content_copy"
-                  title="Hospice Care"
-                  description="Focuses on comfort and emotional support for terminally ill patients and their families. Hospice care can be provided at home, in a hospice facility, or in a nursing home. It offers pain management, symptom control, and spiritual support during this difficult time."
+                  title="Full Documentation"
+                  description="Built by developers for developers. Check the foundation and you will find
+                    everything inside our documentation."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="flip_to_front"
-                  title="Respite Stays"
-                  description="Provides temporary care for your loved one in a senior living community, allowing family caregivers a well-deserved break. This can be helpful for planned events, vacations, or simply needing some time to recharge."
+                  title="MUI Ready"
+                  description="The world's most popular react components library for building user interfaces."
                 />
               </Grid>
             </Grid>
@@ -82,15 +83,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="price_change"
-                  title="Assisted Living Waiver"
-                  description="A government program that can help qualified seniors with limited financial resources afford the cost of assisted living. We can help you navigate the application process."
+                  title="Save Time & Money"
+                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="devices"
-                  title="Other Needs"
-                  description="We understand that senior care needs can be diverse. In addition to the services listed above, we can also help connect you with resources for transportation assistance, financial planning, legal services, and more."
+                  title="Fully Responsive"
+                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
                 />
               </Grid>
             </Grid>

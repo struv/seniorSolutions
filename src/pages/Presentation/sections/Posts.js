@@ -48,7 +48,7 @@ function Places() {
               description="Feeling lost as your loved one ages? This guide explores common transitions like aging in place ..."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "/pages/Presentation/sections/Contact",
                 color: "info",
                 label: "read more",
               }}
