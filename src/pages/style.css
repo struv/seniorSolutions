@@ -1,0 +1,9 @@
+.image-container {
+    overflow: hidden; /* Prevent image overflow during resize */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.2); /* Increase image size on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition animation */
+  }
+  

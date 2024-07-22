@@ -55,7 +55,7 @@ function Information() {
                 description="Send us a short message and we'll be happy to apply our knowledge and experience to your particular situation"
                 action={{
                   type: "internal",
-                  route: "Presentation/sections/Contact",
+                  route: "./Contact.js#contact",
                   label: "contact us",
                 }}
               />

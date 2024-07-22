@@ -85,7 +85,7 @@ const routes = [
           },
           {
             name: "contact us",
-            route: "/pages/landing-pages/contact-us",
+            route: "./pages/sections/Contact.js",
             component: <ContactUs />,
           },
           {

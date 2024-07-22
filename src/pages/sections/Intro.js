@@ -33,6 +33,7 @@ function BuiltByDevelopers() {
       borderRadius="xl"
       my={2}
       py={6}
+      id="about-us"
       sx={{
         backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
           `${linearGradient(

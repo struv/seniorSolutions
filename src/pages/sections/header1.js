@@ -14,7 +14,7 @@ import bgImage from "assets/images/seniors/dance.jpg";
 
 function HeaderOne() {
   return (
-    <MKBox component="header" position="relative">
+    <MKBox component="header" position="relative" id="home">
       <MKBox component="nav" position="absolute" top="0.5rem" width="100%">
         <Container>
           <Grid container flexDirection="row" alignItems="center">
@@ -52,7 +52,9 @@ function HeaderOne() {
                   color="white"
                   fontWeight="regular"
                   p={1}
-                  onClick={(e) => e.preventDefault()}
+                  onClick={() =>
+                    document.getElementById("home").scrollIntoView({ behavior: "smooth" })
+                  }
                 >
                   Home
                 </MKTypography>
@@ -80,7 +82,9 @@ function HeaderOne() {
                   color="white"
                   fontWeight="regular"
                   p={1}
-                  onClick={(e) => e.preventDefault()}
+                  onClick={() =>
+                    document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
+                  }
                 >
                   Contact Us
                 </MKTypography>

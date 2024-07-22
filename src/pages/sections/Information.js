@@ -26,7 +26,7 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 function Information() {
   return (
-    <MKBox component="section" py={12} id="about-us">
+    <MKBox component="section" py={12} id="about">
       <Container>
         <Grid container spacing={4} alignItems="center">
           <Grid item xs={12} lg={16}>

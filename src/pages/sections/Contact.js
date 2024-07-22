@@ -28,7 +28,7 @@ import bgImage from "assets/images/examples/blog2.jpg";
 
 function Contact() {
   return (
-    <MKBox component="section" py={{ xs: 0, lg: 6 }}>
+    <MKBox component="section" py={{ xs: 0, lg: 6 }} id="contact">
       <Container>
         <Grid container item>
           <MKBox
