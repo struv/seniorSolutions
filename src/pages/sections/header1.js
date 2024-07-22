@@ -65,7 +65,9 @@ function HeaderOne() {
                   color="white"
                   fontWeight="regular"
                   p={1}
-                  onClick={(e) => e.preventDefault()}
+                  onClick={() =>
+                    document.getElementById("about-us").scrollIntoView({ behavior: "smooth" })
+                  }
                 >
                   About Us
                 </MKTypography>
