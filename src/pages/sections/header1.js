@@ -14,7 +14,7 @@ import bgImage from "assets/images/seniors/dance.jpg";
 
 function HeaderOne() {
   return (
-    <MKBox component="header" position="relative" id="home">
+    <MKBox component="header" position="relative">
       <MKBox component="nav" position="absolute" top="0.5rem" width="100%">
         <Container>
           <Grid container flexDirection="row" alignItems="center">
@@ -52,9 +52,7 @@ function HeaderOne() {
                   color="white"
                   fontWeight="regular"
                   p={1}
-                  onClick={() =>
-                    document.getElementById("home").scrollIntoView({ behavior: "smooth" })
-                  }
+                  onClick={(e) => e.preventDefault()}
                 >
                   Home
                 </MKTypography>
@@ -82,9 +80,7 @@ function HeaderOne() {
                   color="white"
                   fontWeight="regular"
                   p={1}
-                  onClick={() =>
-                    document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
-                  }
+                  onClick={(e) => e.preventDefault()}
                 >
                   Contact Us
                 </MKTypography>
@@ -167,8 +163,21 @@ function HeaderOne() {
               professional guidance, support, and care they deserve. We look forward to helping you.
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
-              <MKButton color="white">Get Started</MKButton>
-              <MKButton variant="text" color="white">
+              <MKButton
+                color="white"
+                onClick={() =>
+                  document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Get Started
+              </MKButton>
+              <MKButton
+                variant="text"
+                color="white"
+                onClick={() =>
+                  document.getElementById("about-us").scrollIntoView({ behavior: "smooth" })
+                }
+              >
                 Read more
               </MKButton>
             </Stack>
